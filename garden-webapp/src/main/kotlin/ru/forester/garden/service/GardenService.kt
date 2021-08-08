@@ -1,4 +1,4 @@
-package ru.forester.garden
+package ru.forester.garden.service
 
 import org.springframework.stereotype.Service
 import ru.forester.garden.model.Plant

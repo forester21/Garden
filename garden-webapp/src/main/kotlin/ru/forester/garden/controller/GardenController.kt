@@ -1,7 +1,7 @@
 package ru.forester.garden.controller
 
 import org.springframework.web.bind.annotation.*
-import ru.forester.garden.GardenService
+import ru.forester.garden.service.GardenService
 import ru.forester.garden.model.Plant
 
 @RestController
