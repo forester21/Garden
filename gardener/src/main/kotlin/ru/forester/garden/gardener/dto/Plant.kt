@@ -1,4 +1,4 @@
-package ru.forester.garden.client.dto
+package ru.forester.garden.gardener.dto
 
 data class Plant(
         val name: String,

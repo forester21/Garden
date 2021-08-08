@@ -1,12 +1,12 @@
-package ru.forester.garden.client
+package ru.forester.garden.gardener
 
 import io.ktor.client.*
 import io.ktor.client.features.json.*
 import io.ktor.client.request.*
 import io.ktor.http.*
-import ru.forester.garden.client.dto.Plant
+import ru.forester.garden.gardener.dto.Plant
 
-class GardenClient(private val baseUrl: String) {
+class Gardener(private val baseUrl: String) {
 
     private val httpClient = HttpClient {
         install(JsonFeature)
