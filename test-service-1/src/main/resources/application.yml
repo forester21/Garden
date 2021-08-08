@@ -1,0 +1,9 @@
+gardener:
+  client:
+    baseUrl: http://localhost:8080
+  plant:
+    name: test-service-1
+    description: "Сервис для тестирования"
+    version: v1
+server:
+  port: 8081

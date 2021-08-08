@@ -18,9 +18,10 @@ repositories {
 }
 
 dependencies {
-	implementation(project(":garden-client"))
+	implementation(project(":gardener"))
+	implementation(project(":gardener-spring-boot-starter"))
+	implementation("org.springframework.boot:spring-boot-starter-web")
 
-	implementation("org.springframework.boot:spring-boot-autoconfigure")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 }
