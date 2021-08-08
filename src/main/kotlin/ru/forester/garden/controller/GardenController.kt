@@ -1,16 +1,16 @@
 package ru.forester.garden.controller
 
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RestController
-import ru.forester.garden.dto.PlantDTO
+import org.springframework.web.bind.annotation.*
+import ru.forester.garden.GardenService
+import ru.forester.garden.model.Plant
 
 @RestController
 @RequestMapping("/garden")
-class GardenController {
+class GardenController(private val gardenService: GardenService) {
+
+    @PostMapping("/plant")
+    fun plant(@RequestBody plant: Plant) = gardenService.plant(plant)
 
     @GetMapping
-    fun getGarden() = listOf(
-            PlantDTO("sme-sample-service"),
-            PlantDTO("sme-template-service"))
+    fun getGarden(): List<Plant> = gardenService.getGarden()
 }
