@@ -12,3 +12,5 @@ pluginManagement {
 
 rootProject.name = "garden"
 include("garden-webapp")
+include("garden-client")
+include("garden-client-spring-boot-starter")
