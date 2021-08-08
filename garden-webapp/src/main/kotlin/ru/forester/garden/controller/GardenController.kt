@@ -9,7 +9,7 @@ import ru.forester.garden.model.Plant
 class GardenController(private val gardenService: GardenService) {
 
     @PostMapping("/plant")
-    fun plant(@RequestBody plant: Plant) = gardenService.plant(plant)
+    fun putPlant(@RequestBody plant: Plant) = gardenService.putPlant(plant)
 
     @GetMapping
     fun getGarden(): List<Plant> = gardenService.getGarden()

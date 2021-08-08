@@ -7,7 +7,7 @@ import ru.forester.garden.repository.GardenRepository
 @Service
 class GardenService(private val gardenRepository: GardenRepository) {
 
-    fun plant(plant: Plant){
+    fun putPlant(plant: Plant){
         gardenRepository.save(plant)
     }
 
